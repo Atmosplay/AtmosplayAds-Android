@@ -455,7 +455,7 @@ The [NativeAdSample](./app/src/main/java/com/atmosplayads/demo/sample/NativeAdSa
 
 # 4 Others
 ## 4.1 GDPR
-This documentation is provided for compliance with the European Union's General Data Protection Regulation (GDPR). If you are collecting consent from your users, you can make use of APIs discussed below to inform ZPLAYAds SDK.
+This documentation is provided for compliance with the European Union's General Data Protection Regulation (GDPR). If you are collecting consent from your users, you can make use of APIs discussed below to inform AtmosplayAds SDK.
 ```java 
 enum GDPRStatus {
     // The user has granted consent for personalized ads.
