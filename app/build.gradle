@@ -33,5 +33,5 @@ dependencies {
     implementation 'com.tencent.bugly:crashreport:2.6.6.1'
 
     // AtmosplayAds SDK
-    implementation 'com.atmosplayads:atmosplayads:3.0.0-alpha4'
+    implementation 'com.atmosplayads:atmosplayads:3.0.0'
 }
