@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Atmosplay SDK</string>
+    <string name="app_id">输入应用 ID</string>
+    <string name="ad_unit_id">输入广告位 ID</string>
+    <string name="scan">扫描</string>
+    <string name="request">请求广告</string>
+    <string name="present">展示广告</string>
+    <string name="payload_loaded">请求实体加载完成</string>
+    <string name="play_page_loaded">广告缓存完成</string>
+    <string name="landing_page_loaded">落地页缓存完成</string>
+    <string name="ads_incentive">奖励</string>
+    <string name="ads_video_finished">视频页结束</string>
+    <string name="ads_video_start">视频页开始</string>
+    <string name="ads_error">错误信息： %1$d -> %2$s</string>
+    <string name="open_camera_permission">请打开相机权限，否则无法打开相机</string>
+    <string name="code_request_error">解析二维码失败</string>
+    <string name="open_write_permission">请打开读写权限，否则无法开启优化广告启动速度</string>
+    <string name="open_phone_permission">请打开电话权限，否则无法正常获取imei等标志信息，可能导致没有广告收益</string>
+    <string name="load_failed">错误码: %1$d 描述: %2$s</string>
+    <string name="start_request">开始请求广告</string>
+    <string name="pre_cache_finished">预加载完成</string>
+    <string name="ad_present_closed">广告展示完毕</string>
+    <string name="loading_ad">广告加载中…</string>
+    <string name="cache_cnt">输入缓存物料个数，默认为1</string>
+    <string name="auto_load">自动加载</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="have_no_cache">已无缓存</string>
+    <string name="did_not_clear">清除缓存失败</string>
+    <string name="cleared">已清除缓存</string>
+    <string name="landing_page_install_btn_clicked">点击安装按钮</string>
+    <string name="test_host">测试环境</string>
+    <string name="product_host">正式环境</string>
+    <string name="sdk_name">AtmosplayAds SDK</string>
+    <string name="ad_list_title">select on of the options below</string>
+    <string name="settings">设置</string>
+    <string name="test_model">测试环境</string>
+    <string name="auto_ad_model">自动加载</string>
+    <string name="auto_ad_model_interstitial">自动加载(插屏)</string>
+    <string name="clear_cached_assets">清除缓存</string>
+    <string name="channel_id">渠道号：</string>
+    <string name="preview">预览</string>
+    <string name="input_html_url_or_ad_id">输入HTML url或广告ID</string>
+    <string name="clear_log">清除日志</string>
+    <string name="ads_opened">广告 open</string>
+    <string name="gdpr_setting">GDPR</string>
+</resources>
