@@ -5,7 +5,8 @@
    * [2 SDK接入](#2-sdk接入)
       * [2.1 Android Studio (推荐)](#21-android-studio-推荐)
          * [2.1.1 添加依赖](#211-添加依赖)
-         * [2.1.2 同步项目](#212-同步项目)
+         * [2.1.2 添加权限](#212-添加权限)
+         * [2.1.3 同步项目](#213-同步项目)
       * [2.2 Eclipse](#22-eclipse)
          * [2.2.1 导入 SDK jar 文件](#221-导入-sdk-jar-文件)
          * [2.2.2 注册 AtmosplayAds SDK 组件](#222-注册-atmosplayads-sdk-组件)
@@ -56,8 +57,13 @@ dependencies {
     compile 'com.atmosplayads:atmosplayads:3.0.0'
 }
 ```
+### 2.1.2 添加权限
+```xml
+<!--此权限受 Android 系统限制，若无此权限会影响广告收益。国内渠道必须添加，Googleplay 可不加-->
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+```
 
-### 2.1.2 同步项目
+### 2.1.3 同步项目
 点击菜单栏“同步”(Sync Project with Gradle Files)按钮，下载依赖
 
 ## 2.2 Eclipse 
@@ -76,6 +82,8 @@ dependencies {
 <!-- 必选权限 -->
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<!--此权限受 Android 系统限制，若无此权限会影响广告收益。国内渠道必须添加，Googleplay 可不加-->
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
 <!-- 可选权限 -->
 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
