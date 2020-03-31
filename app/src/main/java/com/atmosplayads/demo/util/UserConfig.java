@@ -17,6 +17,10 @@ public class UserConfig {
     private static final String _VIDEO_UNIT_ID = "3FBEFA05-3A8B-2122-24C7-A87D0BC9FEEC";
     private static final String _INTERSTITIAL_UNIT_ID = "19393189-C4EB-3886-60B9-13B39407064E";
 
+    private static final String _FLOATAD_UNIT_ID = "6324B007-21F2-963D-8514-977390BBD341";
+    private static final String _WINDOWAD_UNIT_ID = "86B87233-E2EF-C428-A35B-C736E23C8515";
+
+
     private static final String SP_NAME = "zp.user.config";
     private static final String AUTOLOAD = "a";
     private static final String CHANNEL_ID = "b";
@@ -29,6 +33,12 @@ public class UserConfig {
 
     private static final String INTERSTITIAL_APP_ID = "ab";
     private static final String INTERSTITIAL_UNIT_ID = "ac";
+
+    private static final String FLOATAD_APP_ID = "fab";
+    private static final String FLOATAD_UNIT_ID = "fuc";
+
+    private static final String WINDOWAD_APP_ID = "wab";
+    private static final String WINDOWAD_UNIT_ID = "wuc";
 
     private SharedPreferences.Editor editor;
     private SharedPreferences sp;
@@ -118,9 +128,46 @@ public class UserConfig {
         editor.putString(INTERSTITIAL_UNIT_ID, id).apply();
     }
 
+
     public String getInterstitialUnitId() {
         String id = sp.getString(INTERSTITIAL_UNIT_ID, null);
         return isEmptyStr(id) ? _INTERSTITIAL_UNIT_ID : id;
+    }
+
+    public void setFloatAdAppId(String id) {
+        editor.putString(FLOATAD_APP_ID, id).apply();
+    }
+
+    public String getFloatAdAppId() {
+        String id = sp.getString(FLOATAD_APP_ID, null);
+        return isEmptyStr(id) ? _APP_ID : id;
+    }
+
+    public void setFloatAdUnitId(String id) {
+        editor.putString(FLOATAD_UNIT_ID, id).apply();
+    }
+
+    public String getFloatAdUnitId() {
+        String id = sp.getString(FLOATAD_UNIT_ID, null);
+        return isEmptyStr(id) ? _FLOATAD_UNIT_ID : id;
+    }
+
+    public void setWindowAdAppId(String id) {
+        editor.putString(WINDOWAD_APP_ID, id).apply();
+    }
+
+    public String getWindowAdAppId() {
+        String id = sp.getString(WINDOWAD_APP_ID, null);
+        return isEmptyStr(id) ? _APP_ID : id;
+    }
+
+    public void setWindowAdUnitId(String id) {
+        editor.putString(WINDOWAD_UNIT_ID, id).apply();
+    }
+
+    public String getWindowAdUnitId() {
+        String id = sp.getString(WINDOWAD_UNIT_ID, null);
+        return isEmptyStr(id) ? _WINDOWAD_UNIT_ID : id;
     }
 
     private boolean isEmptyStr(String str) {

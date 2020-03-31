@@ -71,6 +71,16 @@
             android:name="com.atmosplayads.demo.StatisticsActivity"
             android:label="Statistics"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.atmosplayads.demo.sample.FloatAdSample"
+            android:label="FloatAdSample"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.atmosplayads.demo.sample.WindowAdSample"
+            android:label="WindowAdSample"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

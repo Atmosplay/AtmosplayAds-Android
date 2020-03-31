@@ -6,6 +6,11 @@
     <string name="scan">扫描</string>
     <string name="request">请求广告</string>
     <string name="present">展示广告</string>
+    <string name="hidden">隐藏广告</string>
+    <string name="update_point_and_width">更新位置和大小</string>
+    <string name="show_float_ad">展示浮标广告</string>
+    <string name="show_video_ad">展示视频广告</string>
+    <string name="show_again_after_hiding">展示隐藏的广告</string>
     <string name="payload_loaded">请求实体加载完成</string>
     <string name="play_page_loaded">广告缓存完成</string>
     <string name="landing_page_loaded">落地页缓存完成</string>
@@ -44,4 +49,11 @@
     <string name="clear_log">清除日志</string>
     <string name="ads_opened">广告 open</string>
     <string name="gdpr_setting">GDPR</string>
+    <string name="float_ad_position_setting">请设置显示FloatAd广告的坐标点位置</string>
+    <string name="float_ad_width_setting">请设置FloatAd广告的宽</string>
+    <string name="window_ad_position_setting">请设置显示WindowA广告的坐标点位置</string>
+    <string name="window_ad_width_setting">请设置WindowAd广告的宽</string>
+    <string name="ad_clicked">点击</string>
+    <string name="ad_isready">isReady</string>
+    <string name="ad_destroy">destroy</string>
 </resources>

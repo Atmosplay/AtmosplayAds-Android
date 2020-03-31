@@ -5,6 +5,11 @@
     <string name="scan">Scan</string>
     <string name="request">Request</string>
     <string name="present">Present</string>
+    <string name="hidden">Hidden</string>
+    <string name="update_point_and_width">UpdatePointAndWidth</string>
+    <string name="show_float_ad">showFloatAd</string>
+    <string name="show_video_ad">showVideoAd</string>
+    <string name="show_again_after_hiding">ShowAgainAfterHiding</string>
     <string name="payload_loaded">payload loaded</string>
     <string name="play_page_loaded">play page loaded</string>
     <string name="landing_page_loaded">landing page loaded</string>
@@ -43,4 +48,11 @@
     <string name="clear_log">Clear Log</string>
     <string name="ads_opened">ad opened</string>
     <string name="gdpr_setting">GDPR</string>
+    <string name="float_ad_position_setting">Please set the position of the coordinate point where FloatAd is displayed:</string>
+    <string name="float_ad_width_setting">Please set the width of FloatAd</string>
+    <string name="window_ad_position_setting">Please set the position of the coordinate point where WindowAd is displayed:</string>
+    <string name="window_ad_width_setting">Please set the width of WindowAd</string>
+    <string name="ad_clicked">clicked</string>
+    <string name="ad_isready">isReady</string>
+    <string name="ad_destroy">destroy</string>
 </resources>

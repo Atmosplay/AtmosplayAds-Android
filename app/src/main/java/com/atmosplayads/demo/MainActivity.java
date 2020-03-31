@@ -15,10 +15,12 @@ import android.webkit.WebView;
 import android.widget.TextView;
 
 import com.atmosplayads.demo.sample.BannerSample;
+import com.atmosplayads.demo.sample.FloatAdSample;
 import com.atmosplayads.demo.sample.InterstitialSample;
 import com.atmosplayads.demo.sample.NativeExpressAdSample;
 import com.atmosplayads.demo.sample.NativeAdSample;
 import com.atmosplayads.demo.sample.RewardVideoSample;
+import com.atmosplayads.demo.sample.WindowAdSample;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -28,11 +30,13 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import static com.atmosplayads.demo.MainActivity.AdType.BANNER;
+import static com.atmosplayads.demo.MainActivity.AdType.FLOATAD;
 import static com.atmosplayads.demo.MainActivity.AdType.INTERSTITIAL;
 import static com.atmosplayads.demo.MainActivity.AdType.NATIVE_MANAGED;
 import static com.atmosplayads.demo.MainActivity.AdType.NATIVE_SELF;
 import static com.atmosplayads.demo.MainActivity.AdType.STATISTICS;
 import static com.atmosplayads.demo.MainActivity.AdType.VIDEO;
+import static com.atmosplayads.demo.MainActivity.AdType.WINDOWAD;
 
 /**
  * Description:
@@ -78,6 +82,18 @@ public class MainActivity extends ToolBarActivity {
             public void onClick(View v) {
                 StatisticsActivity.launch(v.getContext());
             }
+        }),
+        FLOATAD("FloatAd", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FloatAdSample.launch(v.getContext());
+            }
+        }),
+        WINDOWAD("WindowAd", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                WindowAdSample.launch(v.getContext());
+            }
         });
 
         private String name;
@@ -90,7 +106,7 @@ public class MainActivity extends ToolBarActivity {
     }
 
     private static List<AdType> sAdTypeArray =
-            Collections.unmodifiableList(Arrays.asList(BANNER, VIDEO, INTERSTITIAL, NATIVE_SELF, NATIVE_MANAGED, STATISTICS));
+            Collections.unmodifiableList(Arrays.asList(BANNER, VIDEO, INTERSTITIAL, NATIVE_SELF, NATIVE_MANAGED, STATISTICS, FLOATAD, WINDOWAD));
 
     @BindView(R.id.ad_list)
     RecyclerView mAdList;
