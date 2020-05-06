@@ -501,6 +501,7 @@ interface AtmosplayAdLoadListener {
 ### 3.5.2 展示浮标广告
 
 此方法将浮标广告添加到用户屏幕上。
+
 注意：
 1. 初始化后的第一次展示请调用此方法。
 2. 如需更新位置，请调用 `updatePointAndWidth(activity, pointX, pointY, width);`，
