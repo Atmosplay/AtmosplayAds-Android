@@ -499,6 +499,14 @@ interface AtmosplayAdLoadListener {
 ```
 
 ### 3.5.2 展示浮标广告
+
+此方法将浮标广告添加到用户屏幕上。
+注意：
+1. 初始化后的第一次展示请调用此方法。
+2. 如需更新位置，请调用 `updatePointAndWidth(activity, pointX, pointY, width);`，
+3. 如隐藏后再次展示，请调用 `showAgainAfterHiding();`
+
+
 ```java
 // 在展示之前，请先设置浮标广告展示的位置坐标和浮标按钮的宽
 // pointX: 位置坐标点的 X (单位为像素)
@@ -553,6 +561,7 @@ boolean isReady(AD_UNIT_ID)
 // 隐藏浮标广告按钮
 void hiddenFloatAd();
 // 显示隐藏的浮标广告按钮
+// 此方法仅适用于隐藏后的再次展示。
 void showAgainAfterHiding();
 // 销毁广告对象
 void destroy()
@@ -594,6 +603,12 @@ interface WindowAdListener {
 ```
 
 ### 3.6.3 展示窗口广告
+
+此方法将窗口广告添加到用户屏幕上。
+注意：
+1. 初始化后的第一次展示请调用此方法 
+2. 如需更新位置，请调用 `updatePointAndWidth(context, pointX, pointY, width);`
+3. 如隐藏后再次展示，请调用 `showAgainAfterHiding();`
 ```java
 // 在展示之前，请先设置窗口广告展示的位置坐标和窗口的宽
 // pointX: 位置坐标点的 X (单位为像素)
@@ -622,6 +637,7 @@ boolean isReady(AD_UNIT_ID)
 // 隐藏窗口广告
 void hiddenWindowAd();
 // 显示隐藏的窗口广告
+// 此方法仅适用于隐藏后的再次展示
 void showAgainAfterHiding();
 // 销毁广告对象
 void destroy()
