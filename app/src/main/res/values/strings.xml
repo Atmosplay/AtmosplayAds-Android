@@ -5,6 +5,7 @@
     <string name="scan">Scan</string>
     <string name="request">Request</string>
     <string name="present">Present</string>
+    <string name="close">Close</string>
     <string name="hidden">Hidden</string>
     <string name="update_point_and_width">UpdatePointAndWidth</string>
     <string name="show_float_ad">showFloatAd</string>

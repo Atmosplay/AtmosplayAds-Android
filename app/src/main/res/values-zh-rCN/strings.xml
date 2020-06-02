@@ -6,6 +6,7 @@
     <string name="scan">扫描</string>
     <string name="request">请求广告</string>
     <string name="present">展示广告</string>
+    <string name="close">关闭广告</string>
     <string name="hidden">隐藏广告</string>
     <string name="update_point_and_width">更新位置和大小</string>
     <string name="show_float_ad">展示浮标广告</string>
