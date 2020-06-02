@@ -129,7 +129,9 @@ public class WindowAdSample extends ToolBarActivity {
 
     @OnClick(R.id.isReady)
     public void isReady() {
-        setInfo("isReady: " + mWindowAd.isReady());
+        if(mWindowAd != null){
+            setInfo("isReady: " + mWindowAd.isReady());
+        }
     }
 
     @OnClick(R.id.present)
@@ -138,34 +140,15 @@ public class WindowAdSample extends ToolBarActivity {
             String pointX = mPointX.getText().toString().trim();
             String pointY = mPointY.getText().toString().trim();
             String width = mWindowAdWidth.getText().toString().trim();
-            mWindowAd.setPointAndWidth(dpToPx(pointX), dpToPx(pointY), dpToPx(width));
 
-            mWindowAd.show(this);
+            mWindowAd.show(this,dpToPx(pointX), dpToPx(pointY), dpToPx(width));
         }
     }
 
-    @OnClick(R.id.updatePointAndWidth)
-    public void updatePointAndWidth() {
+    @OnClick(R.id.close)
+    public void close() {
         if (mWindowAd != null) {
-            String pointX = mPointX.getText().toString().trim();
-            String pointY = mPointY.getText().toString().trim();
-            String width = mWindowAdWidth.getText().toString().trim();
-
-            mWindowAd.updatePointAndWidth(this, dpToPx(pointX), dpToPx(pointY), dpToPx(width));
-        }
-    }
-
-    @OnClick(R.id.hidden)
-    public void hidden() {
-        if (mWindowAd != null) {
-            mWindowAd.hiddenWindowAd();
-        }
-    }
-
-    @OnClick(R.id.showAgainAfterHiding)
-    public void showAgainAfterHiding() {
-        if (mWindowAd != null) {
-            mWindowAd.showAgainAfterHiding();
+            mWindowAd.closeWindowAd();
         }
     }
 

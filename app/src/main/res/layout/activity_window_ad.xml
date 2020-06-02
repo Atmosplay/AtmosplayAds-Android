@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
+    android:background="#ff0000ff"
     android:orientation="vertical"
     android:padding="10dp">
 
@@ -134,37 +134,13 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/hidden"
+            android:id="@+id/close"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/hidden"
+            android:text="@string/close"
             android:textAllCaps="false" />
 
-        <Button
-            android:id="@+id/showAgainAfterHiding"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/show_again_after_hiding"
-            android:textAllCaps="false" />
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-
-        <Button
-            android:id="@+id/updatePointAndWidth"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/update_point_and_width"
-            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/destroy"
@@ -175,6 +151,7 @@
             android:textAllCaps="false" />
 
     </LinearLayout>
+
 
     <ScrollView
         android:id="@+id/scrollView"
