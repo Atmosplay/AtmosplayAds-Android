@@ -41,5 +41,5 @@ dependencies {
     implementation(name:'msa_mdid_1.0.13',ext:'aar')
 
     // AtmosplayAds SDK
-    implementation 'com.atmosplayads:atmosplayads:3.2.1-alpha0'
+    implementation 'com.atmosplayads:atmosplayads:3.2.1'
 }
